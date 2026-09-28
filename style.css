@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.todo-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#todo-input:focus {
+    border-color: #007bff;
+}
+
+#add-btn {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#add-btn:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+li.completed {
+    border-left-color: #28a745;
+    background: #e8f5e9;
+}
+
+li.completed .task-text {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actions button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.complete-btn {
+    background-color: #e2f0d9;
+    color: #28a745;
+}
+
+.delete-btn {
+    background-color: #fce8e6;
+    color: #dc3545;
+}
+
+.complete-btn:hover { background-color: #d4edda; }
+.delete-btn:hover { background-color: #f8d7da; }
